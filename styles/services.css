@@ -1,0 +1,102 @@
+.services{
+    padding-block: 5rem;
+
+    & header{
+        & h2{
+            font-size: 1.8rem;
+            font-family: var(--montserrat);
+            font-weight: var(--fw-bold);
+            color: var(--black-yellow);
+            margin-bottom: 1rem;
+        }
+
+        & p{
+            font-family: var(--raleway);
+            color: var(--black-yellow);
+            margin-bottom: 4rem;
+        }
+
+        & span{
+            color: var(--yellow);
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    & .card{
+        margin-bottom: 1.5rem;
+        padding: 3.6rem 2rem;
+        width: 20rem;
+        height: 23rem;
+        background-color: var(--white-snow);
+        border-radius: 4px 4px 0 0 ;
+        border-bottom: 2px solid var(--yellow);
+        text-align: center;
+        margin: auto ;
+
+        & div img{
+            margin: auto;
+            padding-bottom: 1.5rem;
+        }
+
+        & h3{
+            font-size: 1.5rem;
+            font-family: var(--montserrat);
+            font-weight: var(--fw-bold);
+            color: var(--black-yellow);
+            padding-bottom: 0.75rem;
+        }
+
+        & p{
+            font-family: var(--raleway);
+            line-height: 26px;
+            color: var(--gray);
+        }
+
+    }
+}
+
+@media (width >= 80em){
+    .services{
+        padding-block: var(--py-xl);
+        & header{
+            width: 32rem;
+            text-align: center;
+            margin: auto;
+        }
+
+        .services-offer{
+            display: flex;
+            gap: 1rem;
+        }
+    
+        & .card{
+            padding: 3.6rem 2rem;
+            width: 22rem;
+            height: 22rem;
+            background-color: var(--white-snow);
+            border-radius: 4px 4px 0 0 ;
+            border-bottom: 2px solid var(--yellow);
+            text-align: center;
+
+            & div img{
+                margin: auto;
+                padding-bottom: 1.5rem;
+            }
+    
+            & h3{
+                font-size: 1.5rem;
+                font-family: var(--montserrat);
+                font-weight: var(--fw-bold);
+                color: var(--black-yellow);
+                padding-bottom: 0.75rem;
+            }
+    
+            & p{
+                font-family: var(--raleway);
+                line-height: 26px;
+                color: var(--gray);
+            }
+    
+        }
+    }
+}

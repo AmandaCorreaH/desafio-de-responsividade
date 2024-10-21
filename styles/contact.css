@@ -1,0 +1,48 @@
+.contact{
+
+    & div{
+        width: 20rem;
+        margin-bottom: 4rem;
+    
+
+    & h3{
+        font-size: 1.8rem;
+        font-family: var(--montserrat);
+        font-weight: bold;
+        color: var(--dark-yellow);
+        margin-bottom: 1rem;
+    }
+
+    & p{
+        font-family: var(--raleway);
+        color: var(--gray);
+        margin-bottom: 2rem;
+    }
+
+    & button{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+ }
+
+ & .list-contact{
+      & ul li{
+        display: flex;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+
+        font: 500 1rem/120% var(--raleway);
+        color: var(--gray);
+      }
+ }
+}
+
+@media (width >= 80em){
+    .contact{
+        display: flex;
+        gap: 16rem;
+        align-items: center;
+        justify-content: center;
+    }
+}

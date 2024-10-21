@@ -1,0 +1,82 @@
+.testimonials{
+    header{
+        width: 16rem;
+    }
+    header h3{
+        font-family: var(--montserrat);
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: var(--black-yellow);
+        margin-bottom: 4rem;
+    }
+
+    & .comments{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .review{
+            width: 20rem;
+            height: 19rem;
+            padding: 2rem;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+
+            & .person{
+                margin-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+        & .review p{
+                font-family: var(--raleway);
+                line-height: 1.6rem;
+                color: var(--black-yellow);
+            }
+
+        
+    }
+
+    & .bubbles{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        & div{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--gray);
+        
+        }
+
+        & .selected{
+            background-color: var(--yellow);
+        }
+    }
+}
+
+@media (width >= 80em){
+    & .testimonials{
+        & div header {
+            width: 30rem;
+            text-align: center;
+            margin: auto;
+        }
+
+        & .comments{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        
+        & .review{
+            width: 34rem;
+            height: 16.5rem;
+            padding: 3.25rem;
+        }
+    }
+    }
+}

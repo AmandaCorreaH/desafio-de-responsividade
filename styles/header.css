@@ -1,0 +1,54 @@
+header div{
+    justify-content: space-between;
+    .logo{
+        width: 9rem;
+
+        & img{
+            max-width: 100%;
+        }
+    }
+    
+    & ul li{
+        font-family: var(--raleway);
+        color: var(--black-yellow);
+
+        & .active{
+            font-weight: var(--fw-bold);
+            color: var(--yellow);
+            position: relative;
+        }
+
+        .active::before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: -1.5rem;
+            width: 100%;
+            height: 3px;
+            background-color: var(--yellow);
+        }
+    }
+    
+}
+
+.separator{
+    width: 100%;
+    border: 1px solid var(--white-snow);
+    position: absolute;
+    top: 65px;
+    z-index: -1;
+}
+
+@media (width >= 80em){
+    .logo{
+        width: 10rem;
+
+        & img{
+            max-width: 100%;
+        }
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+}

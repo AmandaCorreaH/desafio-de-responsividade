@@ -1,0 +1,21 @@
+footer{
+    padding: 0 1.5rem;
+    background-color: var(--yellow);
+
+    & div > img{
+        width: 9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & div p{
+        font: 400 1rem/100% var(--raleway);
+        color: var(--white-snow);
+        margin-bottom: 0.75rem;
+    }
+
+    & .social-links{
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+    }
+}
