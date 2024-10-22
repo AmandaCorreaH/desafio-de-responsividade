@@ -19,3 +19,11 @@ footer{
         gap: 2rem;
     }
 }
+
+@media (width >= 80em){
+    footer{
+        padding: 3.75rem 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
